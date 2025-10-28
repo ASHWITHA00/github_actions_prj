@@ -1,0 +1,37 @@
+# This workflow is named "Deploy to Production"
+name: Deploy to Production
+
+# Triggers the workflow manually via the Actions tab
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    # Uses the "production" environment.
+    # You can configure rules for this environment in your repo settings.
+    environment:
+      name: production
+      url: https://your-production-site.com # Optional: link to your site
+
+    steps:
+      - name: Deploy to Production
+        run: |
+          echo "Starting deployment to production..."
+          # In a real-world scenario, this is where you would:
+          # 1. SSH into your server
+          # 2. Run 'docker pull ghcr.io/${{ github.repository }}:${{ github.sha }}'
+          # 3. Stop the old container
+          # 4. Start the new container with the newly pulled image
+          echo "Simulating deployment steps..."
+          sleep 10
+          echo "Deployment complete!"
+
+      - name: Post-Deployment Health Check
+        run: |
+          echo "Running health check..."
+          # In a real-world scenario, you might curl your health endpoint
+          # curl -f https://your-production-site.com/health
+          sleep 5
+          echo "Health check passed!"
