@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 Simple Flask App with DevOps (GitHub Actions)
 This project is a minimal Flask application set up to demonstrate a full DevOps CI/CD pipeline using GitHub Actions.
 Project Structure
@@ -27,7 +26,3 @@ File: .github/workflows/deploy.yml
 This workflow is set to workflow_dispatch, meaning it must be triggered manually from the GitHub Actions tab. This is a common setup for production deployments, allowing a final human "go" signal.
 Environments: It uses a GitHub Environment named production. You can configure this in your repository's settings to add required reviewers or environment-specific secrets.
 Deployment (Simulated): The deploy job contains echo commands that simulate the steps of a real deployment (e.g., logging into a server, pulling the new Docker image from GHCR, and restarting the service).
-=======
-# github_actions_prj
-A mini project to practice github actions
->>>>>>> b1b115db3c193e057ec0188a63f43416ebadfe5a
