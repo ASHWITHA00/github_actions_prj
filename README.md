@@ -1,3 +1,15 @@
+
+added dependency b/n workflows
+check  build-push wf line 6-9,13
+
+
+
+
+
+
+
+
+
 Simple Flask App with DevOps (GitHub Actions)
 This project is a minimal Flask application set up to demonstrate a full DevOps CI/CD pipeline using GitHub Actions.
 Project Structure

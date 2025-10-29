@@ -4,7 +4,7 @@ name: Deploy to Production
 # Triggers the workflow manually via the Actions tab
 on:
   workflow_dispatch:
-needs: ./.github/workflows/ci.yml
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
